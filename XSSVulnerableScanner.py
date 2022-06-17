@@ -69,12 +69,13 @@ def installreq():
 banners()
 path_to_file = '/usr/bin/gau'
 path_to_file1 = '/usr/bin/gf'
+path_to_file2 = '/usr/bin/dalfox'
 path = Path(path_to_file)
 path1 = Path(path_to_file1)
-
-if path.is_file() & path1.is_file():
-    print(f'The file {path_to_file} & {path_to_file1} exists')
+path2 = Path(path_to_file2)
+if path.is_file() & path1.is_file() & path2.is_file():
+    print(f'The file {path_to_file} & {path_to_file1} & {path_to_file2} exists')
     getoption()
 else:
-    print(f'The file {path_to_file} & {path_to_file1} does not exist')
+    print(f'The file {path_to_file} & {path_to_file1} & {path_to_file2} does not exist')
     installreq()
